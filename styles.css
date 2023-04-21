@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    overflow-y: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 2rem 4rem;
+
+    font-family: 'Raleway', sans-serif;
+    color: aliceblue;
+}
+
+.chart {
+    margin-top: 2rem;
+    position: relative;
+    width: 80vw;
+    height: 80vh;
+
+    transition: all 0.3s ease;
+}
+
+@media (max-width:768px) {
+    .chart {
+        margin-top: 20vh;
+        width: 90vw;
+    }
+}
+
+.title1 span {
+    color: red;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title2 {
+    font-size: 1.7rem;
+}
+
+.title2 a {
+    color: rgb(41, 218, 41);
+    transition: all 0.4s ease;
+}
+
+.title2 a:hover {
+    filter: drop-shadow(0 0 20px rgb(29, 245, 112));
+}
+
+.credit {
+    font-family: 'Caveat', sans-serif;
+}
+
+.credit a {
+    color: rgb(163, 212, 255);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.credit a:hover {
+    color: rgb(135, 135, 255);
+    filter: drop-shadow(0 0 20px rgb(132, 131, 166));
+}
